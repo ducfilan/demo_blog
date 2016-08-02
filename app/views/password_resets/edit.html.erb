@@ -1,0 +1,17 @@
+<%= provide(:title, t("titles.reset_pass")) %>
+<h1><%=  t("titles.reset_pass") %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user, url: password_reset_path(params[:id])) do |f|%>
+      <%= hidden_field_tag :email, @user.email %>
+      <%= f.label :passwrod %>
+      <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.label :password_confirmation, t("label.passwrod_confirm") %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+      <br>
+      <%= f.submit "Update passwored", class: "btn btn-default" %>
+
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  titles:
+    home: "Home"
+    help: "Help"
+    about: "About"
+    contact: "Contact"
+    login: "Login"
+    edit: "Edit User"
+    index: "All users"
+  menu:
+    home: "Home"
+    help: "Help"
+    about: "About"
+    users: "All Users"
+    contact: "Contact"
+    signup: "Signup"
+    login: "Login"
+    logout: "Logout"
+    profile: "Profile"
+    setting: "Setting"
+  button:
+    delete: "Delete"
+    create: "Create"
+    edit: "Edit"
+    add: "Add"
+    sign_up: "Sign Up"
+    login: "Login"
+    logout: "Logout"
+  label:
+    name: "Name"
+    email: "Email"
+    password: "Password"
+    password_confirm: "Password Confirmation"
+    remember: "Remember me on this computer"
+    forget: "(forgot password)"
+  messages_normal:
+    welcome: "Welcome to Sample App"
+    desc_app: "This is the home page for the Ruby on Rails Tutorial sample application"
+  sigup_page:
+    title: "Sign Up"
+    label_name: "Name"
+    label_email: "Email"
+    label_password: "Password"
+    label_password_confirm: "Password Confirmation"
+    message:
+      success: "Sign up successful!"
+      fail: "We cannot create your account because your input is not valid! Please check again!"
+  messages:
+    error:
+      message: "The form contains"
+      error: "error"
+    login:
+      require: "Please login"
+      success: "Welcome to my blog!"
+      fail: "Invalid email/password combination"
+  confirm: "Are you sure?"
+  email:
+    subject:
+      activation: "Account activation"
+      pass_reset: "Password Reset"
+    verify: "Please check your email to activate your account."
+    success: "Your account is activated!"
+    fail: "Invalid Activation link"
+    message_not_actived: "Account not activated, Check your email for the
+      activation link."
+  micropost:
+    success: "Your micropost is successfully created!"
+    fail: "Your input has some invalid information. Please check again!"
+    destroy: "Deleted micropost"
+    add: "Add your micropost"
+  upload_picture:
+    error: "Your file should be less than 5MB"
+  reset_password:
+    success: "Please check your mail inbox to confirm your signup!"
+    fail: "Email adress is not found in our system!"

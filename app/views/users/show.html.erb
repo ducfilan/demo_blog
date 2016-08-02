@@ -1,0 +1,22 @@
+<% provide(:tilte, @user.name) %>
+<div class="row">
+  <div class="col-md-4">
+		<div class="user_info">
+		  <div class="img_user">
+			<%= gravartar_for @user %>
+		  </div>
+		  <div class="info">
+				<label>Name: </label> <%= @user.name %> <br>
+				<label>Email: </label> <%= @user.email %>
+		  </div>
+		  <%= render "shared/stats" %>
+		</div>
+  </div>
+  <div class="col-md-7">
+    <%= render "follow_form" if logged_in? %>
+    <ol class="microposts">
+  		<%= render @microposts %>
+    </ol>
+	  	<%= will_paginate @microposts %>
+  </div>
+</div>

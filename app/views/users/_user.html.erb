@@ -1,0 +1,22 @@
+<tr>
+  <td>
+    <%= gravartar_for user %>
+  </td>
+  <td>
+  	<div class="index_user">
+      <strong>
+        <%= link_to user.name, user %>
+      </strong>
+      <span>Email: <%= user.email%></span>
+      <span>Followers: <%= user.followers.count %></span>
+      <span>Following: <%= user.following.count %></span>
+
+    </div>
+  </td>
+  <% if (!current_user.nil? and current_user.admin?) %>
+    <td>
+  		<%= link_to "Delete", user, method: "delete",
+        data: {confirm: t("confirm")}, class: "btn btn-danger btn-sm" %>
+    </td>
+	<% end %>
+</tr>

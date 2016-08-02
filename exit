@@ -1,0 +1,13 @@
+[1mdiff --git a/app/controllers/microposts_controller.rb b/app/controllers/microposts_controller.rb[m
+[1mindex dd87a83..d65eb00 100644[m
+[1m--- a/app/controllers/microposts_controller.rb[m
+[1m+++ b/app/controllers/microposts_controller.rb[m
+[36m@@ -30,4 +30,8 @@[m [mclass MicropostsController < ApplicationController[m
+     def correct_user[m
+       @micropost = current_user.microposts.find_by(id: params[:id])[m
+     end[m
+[32m+[m
+[32m+[m[32mdef test_git[m
+[32m+[m
+[32m+[m[32mend[m[41m [m
+ end[m

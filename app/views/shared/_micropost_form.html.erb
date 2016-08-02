@@ -1,0 +1,24 @@
+<%= form_for(@micropost, html: {multipart: true}) do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title, class:"form-control" %>
+
+  <%= f.label :content %>
+  <%= f.text_area :content, placeholder: "Compose new micropost...",
+   class: "form-control", rows: 10%>
+  <%= f.submit t("button.add"), class: "btn btn-primary margin_b_5px width_100per" %>
+
+  <span class="picture">
+    <%= f.file_field :picture %>
+  </span>
+<% end %>
+
+<script type="text/javascript">
+  $("#micropost_picture").bind("change", function() {
+    var size_in_megabytes = this.file[0].size/1024/1024;
+    if (size_in_megabytes > 5) {
+      alert("please choose a smaller file");
+    }
+  });
+</script>

@@ -1,0 +1,6 @@
+<%= form_for @comment do |f| %>
+  <%= hidden_field_tag :user_id, current_user.id %>
+  <%= hidden_field_tag :micropost_id, micropost.id %>
+  <%= f.text_area :content, rows: "2" %>
+  <%= f.submit "Post", class: "btn btn-primary btn-sm"%>
+<% end %>
