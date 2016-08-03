@@ -57,7 +57,7 @@ en:
     forget: "(forgot password)"
   messages_normal:
     welcome: "Welcome to Sample App"
-    desc_app: "This is the home page for the Ruby on Rails Tutorial sample application"
+    desc_app: "Welcome to my blog, if you're having an account, please login, if not click the below button to signup. Thank you"
   sigup_page:
     title: "Sign Up"
     label_name: "Name"
