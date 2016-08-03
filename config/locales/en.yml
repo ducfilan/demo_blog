@@ -95,3 +95,8 @@ en:
   reset_password:
     success: "Please check your mail inbox to confirm your signup!"
     fail: "Email adress is not found in our system!"
+  signup_page:
+    label_name: "Name"
+    label_email: "Email"
+    label_password: "Password"
+    password_confirmation: "Password confirmation"

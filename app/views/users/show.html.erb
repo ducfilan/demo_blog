@@ -1,10 +1,10 @@
 <% provide(:tilte, @user.name) %>
 <div class="row">
-  <div class="col-md-4">
-		<div class="user_info">
-		  <div class="img_user">
-			<%= gravartar_for @user %>
-		  </div>
+  <div class="col-md-4 user_action_wrapper">
+		<div class="user_info user_info_wrapper">
+      <div class="width_100per">
+        <%= link_to gravartar_for(current_user), current_user %>
+      </div>
 		  <div class="info">
 				<label>Name: </label> <%= @user.name %> <br>
 				<label>Email: </label> <%= @user.email %>
@@ -13,6 +13,7 @@
 		</div>
   </div>
   <div class="col-md-7">
+    <h1>Post feed</h1>
     <%= render "follow_form" if logged_in? %>
     <ol class="microposts">
   		<%= render @microposts %>
